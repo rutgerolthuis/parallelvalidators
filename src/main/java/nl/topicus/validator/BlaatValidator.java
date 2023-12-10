@@ -3,6 +3,7 @@ package nl.topicus.validator;
 import lombok.RequiredArgsConstructor;
 import nl.topicus.Registratie;
 import nl.topicus.ResultHolder;
+import nl.topicus.SeoRuw;
 
 @RequiredArgsConstructor
 public class BlaatValidator implements Validator{
@@ -17,6 +18,10 @@ public class BlaatValidator implements Validator{
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        return registratie.isOk() ? succes(code) : unsuccesful(resultStatus, code);
+        if(registratie instanceof SeoRuw seo){
+        return seo.isOk() || seo.wazzaa().equals("oeps") ? succes(code) : unsuccesful(resultStatus, code);
+        }
+        return unsuccesful(resultStatus, code);
+
     }
 }
