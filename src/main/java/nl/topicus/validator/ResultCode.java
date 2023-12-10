@@ -1,6 +1,5 @@
 package nl.topicus.validator;
 
-import jdk.jfr.Registered;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

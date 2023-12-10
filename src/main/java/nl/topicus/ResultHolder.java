@@ -1,7 +1,5 @@
 package nl.topicus;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import nl.topicus.validator.ResultCode;
 import nl.topicus.validator.ResultStatus;
 

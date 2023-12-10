@@ -3,8 +3,6 @@ package nl.topicus.validator;
 import lombok.RequiredArgsConstructor;
 import nl.topicus.Registratie;
 import nl.topicus.ResultHolder;
-import nl.topicus.validator.ResultCode;
-import nl.topicus.validator.ResultStatus;
 
 @RequiredArgsConstructor
 public class BlaatValidator implements Validator{

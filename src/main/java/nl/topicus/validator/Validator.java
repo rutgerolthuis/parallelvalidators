@@ -1,10 +1,6 @@
 package nl.topicus.validator;
 
-import nl.topicus.Registratie;
 import nl.topicus.ResultHolder;
-
-import java.util.function.BiFunction;
-import java.util.function.Function;
 
 public interface Validator {
     ResultHolder validate();
